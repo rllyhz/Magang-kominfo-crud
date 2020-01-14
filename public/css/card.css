@@ -1,0 +1,49 @@
+/* Card view */
+.card {
+    position: absolute;
+    z-index: 50;
+    top: 15%;
+    left: 50%;
+    width: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(80, 80, 80, 0.7);
+    transition: opacity 1s;
+    opacity: 0;
+    pointer-events: none;
+}
+.card .card-header {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    text-align: center;
+    padding: 0.3em 0;
+    font-size: 1.8rem;
+    background-color: var(--warna-utama);
+    color: #fff;
+}
+.card .card-header .container {
+    padding: 0;
+}
+.card .card-header .close {
+    float: right;
+}
+.card-aksi {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-aksi {
+    padding: 0.6em 1.2em;
+}
+.btn-simpan {
+    background-color: #5acf11;
+    margin-left: 0.5em;
+}
+.btn-batal {
+    background-color: #7c7c7c;
+}
+.btn-tambah {
+    /* bord #5acf11; */
+    background-color: #5acf11;
+}

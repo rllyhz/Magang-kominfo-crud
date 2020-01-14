@@ -17,8 +17,12 @@ class PegawaiController extends Controller
     public function index()
     {
         $dataPegawai = Pegawai::all();
-        $data = ['dataPegawai' => $dataPegawai];
-        return view('templates/master', $data);
+        $data = [
+            'dataPegawai' => $dataPegawai,
+            'title' => 'Pegawai',
+            'css_file' => 'pegawai'
+        ];
+        return view('pegawai', $data);
         // return "<h1>Halaman Mahasiswa</h1>";
     }
 

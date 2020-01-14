@@ -1,0 +1,13 @@
+@import "../app.css";
+@import "../header.css";
+@import "../table.css";
+@import "../content-wrapper.css";
+@import "../alert.css";
+@import "../card.css";
+@import "../form.css";
+@import "../button.css";
+@import "../footer.css";
+
+/*  */
+
+@import "../media_query.css";

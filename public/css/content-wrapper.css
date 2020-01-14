@@ -1,0 +1,72 @@
+/* Main app */
+.main-app {
+    color: var(--light);
+}
+.main-app .container-app {
+    width: 100vw;
+    height: auto;
+    position: relative;
+}
+.main-app .container-app .sidebar {
+    background-color: var(--light);
+}
+.main-app .container-app .sidebar > .sidebar-link {
+    font-size: 1.2rem;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-app .container-app .sidebar > .sidebar-link a {
+    color: var(--light);
+    display: block;
+}
+.main-app .container-app .sidebar {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    transform: translateX(0);
+    overflow-y: auto;
+    padding: 1rem 1.3rem;
+    background-color: var(--secondary);
+    transition: all 0.4s;
+}
+.main-app .container-app .sidebar.close {
+    transform: translateX(-100%);
+}
+.main-app .container-app .content-app {
+    flex-grow: auto;
+    margin-left: 300px;
+    overflow: auto;
+    transition: all 0.4s;
+    color: rgb(39, 39, 39);
+}
+.main-app .container-app .content-app .container {
+    min-height: 75vh;
+}
+.main-app .container-app .content-app.close {
+    margin-left: 0;
+}
+
+/* tombol scroll */
+.main-app .container-app .scrollUp {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 5vw;
+    height: 5vh;
+    padding: 1.5rem;
+    border-radius: 200px;
+    background-color: var(--primary);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 20px rgba(110, 110, 110, 0.4);
+    cursor: pointer;
+    transition: box-shadow scale 0.3s linear;
+}
+.main-app .container-app .scrollUp:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 8px 20px rgba(66, 66, 66, 0.4);
+}

@@ -1,0 +1,27 @@
+/* Alert */
+.alert {
+    width: 98.3%;
+    text-align: center;
+    height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.alert .close {
+    position: absolute;
+    top: 10%;
+    transform: translateY(-10%);
+    right: 20px;
+    cursor: pointer;
+}
+.alert.alert-sukses {
+    background-color: lightblue;
+}
+.alert.alert-gagal {
+    background-color: lightcoral;
+}

@@ -16,7 +16,32 @@
 // });
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'title' => 'Home',
+        'css_file' => 'portfolio'
+    ];
+    return view('home', $data);
+});
+Route::get('/portfolio', function () {
+    $data = [
+        'title' => 'Portfolio',
+        'css_file' => 'portfolio'
+    ];
+    return view('portfolio', $data);
+});
+Route::get('/blog', function () {
+    $data = [
+        'title' => 'Blog',
+        'css_file' => 'portfolio'
+    ];
+    return view('blog', $data);
+});
+Route::get('/about', function () {
+    $data = [
+        'title' => 'About',
+        'css_file' => 'portfolio'
+    ];
+    return view('about', $data);
 });
 Route::get('/pegawai', 'PegawaiController@index');
 Route::get('/pegawai/detail/{nip}', 'PegawaiController@show');

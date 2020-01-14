@@ -1,0 +1,70 @@
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* Desktop */
+@media only screen and (max-width: 725px) {
+    html {
+        font-size: 60%;
+    }
+    .container {
+        width: 95%;
+    }
+    .table thead tr {
+        font-size: 0.8rem;
+        padding: 0.6rem;
+        height: 0.4rem;
+    }
+    .table tbody tr {
+        font-size: 1rem;
+    }
+    .header .nav-bar {
+        padding: 1rem 1rem;
+    }
+    .header .nav-bar .nav-link {
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        z-index: 10;
+        top: 10vh;
+        left: 0;
+        background-color: var(--light);
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem;
+        transform: translateY(-120%);
+        opacity: 0;
+    }
+    .sidebar {
+        display: none;
+        transform: translateX(-100%);
+    }
+    .content-app {
+        margin-left: 0;
+    }
+    .sidebar-button {
+        display: none;
+        pointer-events: none;
+    }
+}
+
+@media only screen and (min-width: 733px) {
+    html {
+        font-size: 100%;
+    }
+    .header .nav-bar .nav-link {
+        position: static;
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .header .nav-bar .nav-close,
+    .header .nav-bar .nav-menu {
+        display: none;
+        pointer-events: none;
+    }
+}
