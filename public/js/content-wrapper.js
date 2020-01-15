@@ -5,6 +5,11 @@ const sidebarButton = document.getElementById("sidebar-button");
 const scrollUpButton = document.getElementById("tombol-scrollUp");
 const sidebar = document.getElementById("sidebar");
 const contentApp = document.getElementById("content-app");
+const iconLeft = sidebarButton.querySelector('.fa-arrow-left');
+const iconRight = sidebarButton.querySelector('.fa-arrow-right');
+
+iconRight.style.display = 'none';
+
 
 window.addEventListener("resize", () => {
     if (parseInt(window.innerWidth) < 725) {
@@ -30,9 +35,15 @@ sidebarButton.addEventListener("click", () => {
         contentApp.classList.toggle("close");
         sidebarButton.dataset.pressed = "true";
         sidebarButton.style.backgroundColor = "var(--primary)";
+        iconRight.style.display = 'inline-block';
+        iconLeft.style.display = 'none';
+        icon.classList.remove('fa-arrow-left');
+        icon.classList.add('fa-arrow-rigth');
     } else {
         sidebar.classList.toggle("close");
         contentApp.classList.toggle("close");
+        iconRight.style.display = 'none';
+        iconLeft.style.display = 'inline-block';
         sidebarButton.dataset.pressed = "false";
         sidebarButton.style.backgroundColor = "#bebebe";
     }

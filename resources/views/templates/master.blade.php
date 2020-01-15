@@ -22,7 +22,8 @@
               id="sidebar-button"
               data-pressed="false"
            >
-              <i class="fa fa-user"></i>
+              <i class="fa fa-arrow-left"></i>
+              <i class="fa fa-arrow-right"></i>
            </button>
            <div class="nav-link" id="nav-link">
               <a href="/" class="link-item">Home</a>
